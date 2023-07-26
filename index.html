@@ -32,7 +32,7 @@ font-family: 'Lato', sans-serif;
                     <li class=" py-4 px-8">All Fruits</li>
                 </ul>
                 </div>
-                <div class=" container mx-auto flex items-center px-40">
+                <div class=" container mx-auto flex items-center px-10 lg:px-40">
                     
                         <img src="./images/logo.png" alt="">
                   <a class=" text-3xl">Fruit Burst</a>
@@ -40,23 +40,28 @@ font-family: 'Lato', sans-serif;
                 <div class=" container mx-auto rounded-full bg-transparent lg:bg-white flex items-center">
                   <input
                     type="text"
-                    class=" hidden md:block container py-4 px-4 rounded-full text-gray-700
+                    class=" hidden border-none lg:block container py-4 px-4 rounded-full text-gray-700
                     " placeholder="Search here"
                   /> 
                   <div class="container mx-auto relative left-20">
-                  <i class="fa-solid fa-magnifying-glass text-3xl text-black"></i>
+                  <i class="fa-solid fa-magnifying-glass text-3xl text-black hidden lg:block"></i>
                 </div>
                 </div>
-                <button class="block md:hidden py-3 px-4 mx-2 rounded focus:outline-none hover:bg-blue-500">
-                <div class="dropdown dropdown-end">
-                    <label tabindex="0" class="btn m-1"><i class="fa-solid fa-bars"></i></label>
-                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Item 1</a></li>
-                      <li><a>Item 2</a></li>
+                <div class="lg:hidden relative -left-20">
+                    
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn"><i class="fa-solid fa-bars"></i></label>
+                    
+                        <ul class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                      <li class="py-4 px-4">Home</li>
+                      <li class="py-4 px-4">About Us</li>
+                      <li class="py-4 px-4">Shop</li>
+                      <li class="py-4 px-4">All Fruits</li>
                     </ul>
                   </div>
-                  </button>
+                </div>
             </div>
+        </div>
     </header>
     <main>
 
